@@ -1,6 +1,4 @@
-# Florida Seller Lead Cold‑Call Script — README.md
-
-**Goal:** Human, simple, and short. Don’t assume anything about them. Find motivation fast. Set a callback window.
+# Florida Seller Lead Cold‑Call Script
 
 ## Table of Contents
 - [Core Script](#core-script)
@@ -46,20 +44,11 @@
 1) “What’s got you open to selling?” → If retail talk: [I want top dollar / retail.](#i-want-top-dollar--retail)  
 2) “What timing would work for you?” → If urgent: [Can you close fast?](#can-you-close-fast)  
 3) “Any repairs or issues I should know about?” → If as‑is: [As‑is / repairs?](#as-is--repairs)  
-4) *Only if it feels natural:* “If everything else made sense, any ballpark you’d feel okay with?” → If pushback: [Just send me an offer.](#just-send-me-an-offer)
+4) *Only if it feels natural:* “Any ballpark figure you’d feel okay with?” → If pushback: [Just send me an offer.](#just-send-me-an-offer)
 
 **Close**  
-“Perfect. I’ll review this and follow up with next steps. What’s a good **general time window** to reconnect **[day/time range]**? Is this the best number?”  
+“Perfect. I’ll review this and follow up with next steps. What’s a good time to reconnect **[day/time range]**? Is this the best number?”  
 If they prefer text/email: [Text or email me.](#text-or-email-me)
-
----
-
-## If Answer: Branching
-
-- **No →** Thank them. Offer removal if they want. → [Remove me / DNC.](#remove-me--dnc)  
-- **Maybe/Yes →** Ask the 3 core questions. If they resist price, skip it and close.  
-- **Hostile →** “All good. I’ll let you go.” End.  
-- **Gatekeeper →** “Thanks. Is there a better number or time for the owner?” If none, end.
 
 ---
 
@@ -75,7 +64,7 @@ Links: [Are you an agent?](#are-you-an-agent) • [Is this a scam?](#is-this-a-s
 Links: [Are you the buyer?](#are-you-the-buyer) • [I’ll just list it.](#ill-just-list-it)
 
 ### Are you the buyer?
-“I’m not the buyer. I’m the first point of contact. I’m checking whether a sale is even on your radar and getting the basics. If it makes sense at a price that works for you, I’ll line up next steps with our licensed agent.”  
+“I’m not the buyer. I’m the first point of contact. I’m checking whether a sale is even on your radar and getting the basics. If you have a price that works for you, I’ll line up next steps with our licensed agent.”  
 Links: [Just send me an offer.](#just-send-me-an-offer) • [How do you value it?](#how-do-you-value-it)
 
 ### How did you get my number?
@@ -91,7 +80,7 @@ Links: [Not interested.](#not-interested) • [Just send me an offer.](#just-sen
 Links: [How do you value it?](#how-do-you-value-it) • [Fees / closing costs?](#fees--closing-costs)
 
 ### I want top dollar / retail.
-“If retail is the priority, listing may be better. If speed and convenience matter more, we could be a fit.”  
+“If retail is the priority, listing may be better. If speed and convenience matter more, we could be a better fit.”  
 Links: [I’ll just list it.](#ill-just-list-it) • [Can you close fast?](#can-you-close-fast)
 
 ### Not interested.
@@ -99,7 +88,7 @@ Links: [I’ll just list it.](#ill-just-list-it) • [Can you close fast?](#can-
 Links: [Remove me / DNC.](#remove-me--dnc) • [Busy. Call later.](#busy-call-later)
 
 ### Busy. Call later.
-“No problem. What **general window** works **[today/tomorrow, morning/afternoon/evening]**? I’ll keep it quick.”  
+“No problem. Any time that works **[today/tomorrow, morning/afternoon/evening]**? I’ll keep it quick.”  
 Links: [Text or email me.](#text-or-email-me) • [Voicemail + Quick Text](#voicemail--quick-text)
 
 ### Text or email me.
@@ -111,7 +100,7 @@ Links: [Close](#core-script) • [Voicemail + Quick Text](#voicemail--quick-text
 Links: [As‑is / repairs?](#as-is--repairs) • [Just send me an offer.](#just-send-me-an-offer)
 
 ### As‑is / repairs?
-“As‑is is fine. I just need the big‑ticket items so I plan right.”  
+“As‑is is fine. Any major damage or issues that would be helpful to know about?”  
 Links: [How do you value it?](#how-do-you-value-it) • [Can you close fast?](#can-you-close-fast)
 
 ### Tenants in place.
@@ -127,7 +116,7 @@ Links: [Just send me an offer.](#just-send-me-an-offer) • [How do you value it
 Links: [Just send me an offer.](#just-send-me-an-offer) • [I want top dollar / retail.](#i-want-top-dollar--retail)
 
 ### Is this a scam?
-“I get the caution. I’ll keep it brief and follow up at **[WINDOW]** so you can decide.”  
+“I get the caution. If you are not looking to sell, I can take you off the call list?”  
 Links: [How did you get my number?](#how-did-you-get-my-number) • [Are you an agent?](#are-you-an-agent)
 
 ### I’ll just list it.
@@ -147,29 +136,4 @@ Links: [Compliance Note](#compliance-note)
 - Condition headlines  
 - Occupancy / access  
 - Price ballpark if they share it  
-- Best general callback window  
-- Confirm best number
-
----
-
-## Voicemail + Quick Text
-
-**Voicemail**  
-“Hey, it’s **[NAME]**. Quick question about **[ADDRESS]**. Call or text me back when you get a minute. I’ll try again **[DAY/TIME WINDOW]**.”
-
-**Text**  
-“Hey, it’s **[NAME]**. Quick question about **[ADDRESS]**. If you’d ever consider selling, when’s a good time to chat? I can call **[WINDOW]**, or text me a time that works.”
-
----
-
-## Compliance Note
-
-Florida limits commercial solicitation calls to **8 a.m.–8 p.m. local time** and restricts repeat calls. Respect state and federal Do Not Call rules. If you ever record calls, Florida generally requires consent of **all** parties.
-
-- Florida Stat. §501.616 (call‑time / frequency): https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.616.html  
-- Florida Stat. §501.059 (Do Not Call): https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.059.html  
-- Florida Stat. §934.03 (recording consent): https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0900-0999/0934/Sections/0934.03.html
-
----
-
-**Use this:** Be friendly, be quick, find the why and when, set a window, end the call.
+- Best general callback window
