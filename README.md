@@ -122,7 +122,6 @@ Links: [I want top dollar / retail.](#i-want-top-dollar--retail) • [Just send 
 
 ### Remove me / DNC.
 “Got it. I’ll remove your number.”  
-Links: [Compliance Note](#compliance-note)
 
 ---
 
