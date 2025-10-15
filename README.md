@@ -10,7 +10,7 @@
   - [How did you get my number?](#how-did-you-get-my-number)
   - [Which property are you talking about?](#which-property-are-you-talking-about)
   - [Just send me an offer.](#just-send-me-an-offer)
-  0 [I want top dollar / retail.](#i-want-top-dollar--retail)
+  - [I want top dollar / retail.](#i-want-top-dollar--retail)
   - [Not interested.](#not-interested)
   - [Busy. Call later.](#busy-call-later)
   - [Text or email me.](#text-or-email-me)
