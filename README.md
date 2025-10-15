@@ -86,8 +86,7 @@ Links: [I’ll just list it.](#ill-just-list-it) • [Can you close fast?](#can-
 Links: [Remove me / DNC.](#remove-me--dnc) • [Busy. Call later.](#busy-call-later)
 
 ### Busy. Call later.
-“No problem. Any time that works **[today/tomorrow, morning/afternoon/evening]**? I’ll keep it quick.”  
-Links: [Text or email me.](#text-or-email-me) • [Voicemail + Quick Text](#voicemail--quick-text)
+“No problem. Any time that works **[today/tomorrow, morning/afternoon/evening]**? I’ll keep it quick.”
 
 ### Text or email me.
 “Sure. I’ll send a short recap and our time window.”  
