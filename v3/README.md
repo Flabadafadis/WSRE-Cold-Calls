@@ -32,7 +32,7 @@
 ## Core Script
 
 **Opener**  
-“Hey, I’m **Jared**. I work with a licensed agent here in Florida. Quick real‑estate question: would you consider selling a place you own, or probably not right now?”  
+“Hello, my name is [NAME]. I work with a licensed agent here in [CITY]. Quick question: would you consider selling the property at [ADDRESS], or probably not right now?”  
 → If they ask who you are: jump to [Who is this?](#who-is-this)  
 → If they ask how you got the number: [How did you get my number?](#how-did-you-get-my-number)  
 → If they ask which property: [Which property are you talking about?](#which-property-are-you-talking-about)
