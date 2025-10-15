@@ -23,8 +23,6 @@
   - [I’ll just list it.](#ill-just-list-it)
   - [Remove me / DNC.](#remove-me--dnc)
 - [Data to Capture](#data-to-capture)
-- [Voicemail + Quick Text](#voicemail--quick-text)
-- [Compliance Note](#compliance-note)
 
 ---
 
