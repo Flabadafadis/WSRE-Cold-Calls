@@ -93,7 +93,7 @@ Links: [Text or email me.](#text-or-email-me) • [Voicemail + Quick Text](#voic
 
 ### Text or email me.
 “Sure. I’ll send a short recap and our time window.”  
-Links: [Close](#core-script) • [Voicemail + Quick Text](#voicemail--quick-text)
+Links: [Close](#core-script)
 
 ### Fees / closing costs?
 “We can cover standard closing costs. No fees to you.”  
