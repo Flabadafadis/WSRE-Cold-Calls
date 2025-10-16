@@ -10,7 +10,7 @@
 
 ## Identify yourself
 
-**Sure this is [agent name], I'm with a local real estate investment company and I was calling about your property over on [street name], are you still the owner by any chance?**
+**Sure this is [name], I'm with a local real estate investment company and I was calling about your property over on [street name], are you still the owner by any chance?**
 
 * Yes → [Warm opener](#warm-opener)
 * No → [Schedule callback](#schedule-callback)
@@ -176,3 +176,4 @@
 * Not confirmed → [Schedule callback](#schedule-callback)
 
 [⬆ Back to Start](#start)
+
