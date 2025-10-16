@@ -150,7 +150,7 @@ Use only if asked about price before the appointment, or at the end once the app
 
 **Transparency after scheduling (optional):**
 
-* “Before we meet, quick heads-up on our model so there are no surprises: we typically target about **60% of current as-is market value**, adjusted for repairs, liens, holding, and risk. If that ballpark doesn’t work, tell me now and we won’t waste your time.”
+* “Before we meet, quick heads-up on our model so there are no surprises: we typically target about **60% of the updated value**, adjusted for repairs, liens, holding, and risk. If that ballpark doesn’t work, tell me now and we won’t waste your time.”
 * If rejected → [Realtor check](#realtor-check) or [Schedule callback](#schedule-callback)
   [⬆ Back to Start](#start)
 
@@ -164,6 +164,7 @@ Use only if asked about price before the appointment, or at the end once the app
 * Confirmed → End
 * Not confirmed → [Schedule callback](#schedule-callback)
   [⬆ Back to Start](#start)
+
 
 
 
