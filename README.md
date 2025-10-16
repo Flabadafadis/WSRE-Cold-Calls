@@ -29,7 +29,7 @@
 ## Core Script
 
 **Opener**  
-“Hello, my name is **[NAME]**. Quick question: would you consider selling the property at **[ADDRESS]**, or probably not right now?”  
+“Hello, my name is **[NAME]**. Im not sure if I have the right number but I'm calling to see if you would consider selling the property at **[ADDRESS]**?”  
 → If they ask who you are: [Who is this?](#who-is-this)  
 → If they ask how you got the number: [How did you get my number?](#how-did-you-get-my-number)  
 → If they question your role: [Are you the buyer?](#are-you-the-buyer) or [Are you an agent?](#are-you-an-agent)
