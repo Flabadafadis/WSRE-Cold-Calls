@@ -111,7 +111,7 @@
 
 ## Emotional insight
 
-**If everything lined up, what would selling let you do?**
+**Wonderful, do you have an idea of what your looking to get for the house?**
 
 * Any → [Decision makers](#decision-makers)
   [⬆ Back to Start](#start)
@@ -164,5 +164,6 @@ Use only if asked about price before the appointment, or at the end once the app
 * Confirmed → End
 * Not confirmed → [Schedule callback](#schedule-callback)
   [⬆ Back to Start](#start)
+
 
 
