@@ -54,7 +54,7 @@ If they prefer text/email: [Text or email me.](#text-or-email-me)
 
 ### Who is this?
 "Sure this is [NAME], I'm with a local real estate investment company I was calling about your property over on [STREET NAME], are you still the owner by any chance?"  
-If they want more detail: “I work with a licensed agent here in **[CITY]**.”  
+If they want more detail: “Great! Like I said I work with a local investment company and we are looking for our next purchase, are you currently accepting offers for your house?”  
 Links: [Are you an agent?](#are-you-an-agent) • [Is this a scam?](#is-this-a-scam)
 
 ### Are you an agent?
