@@ -1,3 +1,8 @@
+Goals:
+A) Identify Interested Sellers
+B) Manage offer expectations
+C) Set seller appointments
+
 ## Start
 
 **Hi may I speak to [prospect] please?**
@@ -164,6 +169,7 @@ Use only if asked about price before the appointment, or at the end once the app
 * Confirmed → End
 * Not confirmed → [Schedule callback](#schedule-callback)
   [⬆ Back to Start](#start)
+
 
 
 
