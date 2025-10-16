@@ -3,177 +3,164 @@
 **Hi may I speak to [prospect] please?**
 
 * Yes → [Identify yourself](#identify-yourself)
-* “Yes, can I ask who’s calling?” → [Identify yourself](#identify-yourself)
+* “Who’s calling?” → [Identify yourself](#identify-yourself)
 * No / not available → [Schedule callback](#schedule-callback)
+* If they ask about price at any point → [Price handling](#price-handling)
 
 ---
 
 ## Identify yourself
 
-**Sure this is [name], I'm with a local real estate investment company and I was calling about your property over on [street name], are you still the owner by any chance?**
+**This is [agent], with a local real estate investment company. Calling about [street]. Are you still the owner?**
 
 * Yes → [Warm opener](#warm-opener)
 * No → [Schedule callback](#schedule-callback)
-
-[⬆ Back to Start](#start)
+* If they ask about price → [Price handling](#price-handling)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Schedule callback
 
-**“No worries — is there a better time later today or tomorrow when I can give you a quick callback?”**
+**No worries. Is later today or tomorrow better for a quick callback?**
 
 * Time given → [Close the call](#close-the-call)
-* No time given → [Close the call](#close-the-call)
-
-[⬆ Back to Start](#start)
+* No time → [Close the call](#close-the-call)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Warm opener
 
-**“Great! Like I said I work with a local investment company and we’re looking for our next purchase, do you have a second for a few more questions?”**
+**We’re looking for our next purchase. Do you have a second for a few questions?**
 
 * Yes → [Motivation](#motivation)
 * No → [Schedule callback](#schedule-callback)
-
-[⬆ Back to Start](#start)
+* Price question → [Price handling](#price-handling)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Motivation
 
-**“Perfect! First off, what had you thinking about selling the property in the first place?”**
+**What had you thinking about selling?**
 
-* Clear reason given → [Realtor check](#realtor-check)
-* Vague answer → [Clarify motivation](#clarify-motivation)
-
-[⬆ Back to Start](#start)
+* Clear reason → [Realtor check](#realtor-check)
+* Vague → [Clarify motivation](#clarify-motivation)
+* Price question → [Price handling](#price-handling)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Clarify motivation
 
-**“Is it something like a move, investment property, or just wanting to free it up?”**
+**Is it a move, an investment, or freeing up the asset?**
 
 * Reason identified → [Realtor check](#realtor-check)
-
-[⬆ Back to Start](#start)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Realtor check
 
-**“Are you already working with a Realtor?”**
+**Are you already working with a Realtor?**
 
-* Yes → [Timeline and readiness](#timeline-and-readiness)
-* No → [Timeline and readiness](#timeline-and-readiness)
-
-[⬆ Back to Start](#start)
+* Yes / No → [Timeline and readiness](#timeline-and-readiness)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Timeline and readiness
 
-**“Are you hoping to get the property sold pretty soon, or just feeling things out right now?”**
-**“If you could sell it on your terms, how soon would you like that to happen?”**
+**Are you hoping to sell soon, or just feeling things out?**
+**If you could sell on your terms, how soon would that be?**
 
-* Soon / specific window → [Property use](#property-use)
-* Just feeling things out → [Property use](#property-use)
-
-[⬆ Back to Start](#start)
+* Any → [Property use](#property-use)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Property use
 
-**“Are you currently living in the property, or is it vacant or rented out?”**
+**Are you living there, or is it vacant or rented?**
 
-* Living there → [Property condition](#property-condition)
-* Vacant → [Property condition](#property-condition)
-* Rented → [Property condition](#property-condition)
-
-[⬆ Back to Start](#start)
+* Any → [Property condition](#property-condition)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Property condition
 
-**“How’s the condition of the house—does it need any repairs or updates at this point?”**
-*(Optional add-on)* **“Would you say it’s move-in ready, or more of a handyman special?”**
+**How’s the condition—any repairs or updates needed?**
+**Would you call it move-in ready or a handyman special?**
 
-* Move-in ready → [Financial or logistical](#financial-or-logistical)
-* Needs work / handyman → [Financial or logistical](#financial-or-logistical)
-
-[⬆ Back to Start](#start)
+* Any → [Financial or logistical](#financial-or-logistical)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Financial or logistical
 
-**“Any issues with the mortgage, taxes, or code stuff lately—or is everything pretty current?”**
+**Any issues with mortgage, taxes, or code, or is everything current?**
+**Have you listed in the past year or talked to any agents?**
 
-* Issues present → [Emotional insight](#emotional-insight)
-* Everything current → [Past listing or agents](#past-listing-or-agents)
-
-[⬆ Back to Start](#start)
-
----
-
-## Past listing or agents
-
-**“Just curious—have you had the property listed in the past year, or talked to any agents yet?”**
-
-* Yes → [Emotional insight](#emotional-insight)
-* No → [Emotional insight](#emotional-insight)
-
-[⬆ Back to Start](#start)
+* Any → [Emotional insight](#emotional-insight)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Emotional insight
 
-**“If everything lined up just right, what would selling this place allow you to do?”**
+**If everything lined up, what would selling let you do?**
 
-* Clear “why” expressed → [Decision makers](#decision-makers)
-* Unclear → [Decision makers](#decision-makers)
-
-[⬆ Back to Start](#start)
+* Any → [Decision makers](#decision-makers)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Decision makers
 
-**“Are you the only one making the decision on this, or is someone else involved too?”**
-**“Will they also be available to chat when we go over the options?”**
+**Are you the only decision maker, or is someone else involved?**
+**Will they be available when we go over options?**
 
-* Sole decision maker → [Qualify and set appointment](#qualify-and-set-appointment)
-* Multiple decision makers and available → [Qualify and set appointment](#qualify-and-set-appointment)
-* Multiple decision makers not available → [Schedule callback](#schedule-callback)
-
-[⬆ Back to Start](#start)
+* Sole or all available → [Qualify and set appointment](#qualify-and-set-appointment)
+* Others not available → [Schedule callback](#schedule-callback)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Qualify and set appointment
 
-**If urgency, distress, or flexibility uncovered:**
-**“Okay, sounds like this might be something we can definitely help with. The next step would be a quick appointment with our home advisor — he can break down what we’d be able to offer and walk you through your options. Does [calendly alternative 1] or [calendly alternative 2] work better for you?”**
+**Sounds like we can help. Next step is a quick appointment with our home advisor to break down numbers and options. Does [calendly alt 1] or [calendly alt 2] work?**
 
-* Choose time → [Close the call](#close-the-call)
+* Time chosen → [Close the call](#close-the-call)
 * Needs different time → [Schedule callback](#schedule-callback)
+  [⬆ Back to Start](#start)
 
-[⬆ Back to Start](#start)
+---
+
+## Price handling
+
+Use only if asked about price before the appointment, or at the end once the appointment is set.
+
+**Deflect early:**
+
+* “Price depends on condition, timeline, and risk. We buy as-is, cover most closing costs, and move fast. Let’s see the basics first so we don’t guess wrong.”
+* If they insist on a number → “We’re investors, so it’s below retail. After a quick look we can give a firm number.”
+
+**Transparency after scheduling (optional):**
+
+* “Before we meet, quick heads-up on our model so there are no surprises: we typically target about **60% of current as-is market value**, adjusted for repairs, liens, holding, and risk. If that ballpark doesn’t work, tell me now and we won’t waste your time.”
+* If rejected → [Realtor check](#realtor-check) or [Schedule callback](#schedule-callback)
+  [⬆ Back to Start](#start)
 
 ---
 
 ## Close the call
 
-**“Perfect, I’ve got you down for [day/time]. We’ll shoot you a quick text to confirm — you don’t need to prepare anything, just be ready to chat for a few minutes, but we will try to get an offer signed while we’re there.**
-*(If there is another decision maker in 7., make sure they will be present for the appointment!)*
+**Locked for [day/time]. We’ll text to confirm. No prep needed. Be ready to chat a few minutes. We’ll try to get an offer signed if it fits.**
+*(Ensure all decision makers attend.)*
 
 * Confirmed → End
 * Not confirmed → [Schedule callback](#schedule-callback)
-
-[⬆ Back to Start](#start)
-
+  [⬆ Back to Start](#start)
