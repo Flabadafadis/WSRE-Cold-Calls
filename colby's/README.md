@@ -11,7 +11,7 @@
 
 ## Identify yourself
 
-**This is [agent], with a local real estate investment company. Calling about [street]. Are you still the owner?**
+**This is [NAME], with a local real estate investment company. Calling about [street]. Are you still the owner?**
 
 * Yes → [Warm opener](#warm-opener)
 * No → [Schedule callback](#schedule-callback)
@@ -164,3 +164,4 @@ Use only if asked about price before the appointment, or at the end once the app
 * Confirmed → End
 * Not confirmed → [Schedule callback](#schedule-callback)
   [⬆ Back to Start](#start)
+
