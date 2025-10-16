@@ -53,7 +53,7 @@ If they prefer text/email: [Text or email me.](#text-or-email-me)
 ## Questions/Concerns and Responses
 
 ### Who is this?
-“It’s **[NAME]**. I’m reaching out about **[ADDRESS]**.”  
+“My name is **[NAME]**. I work with a local real estate investment company. I’m reaching out about **[ADDRESS]**.”  
 If they want more detail: “I work with a licensed agent here in **[CITY]**.”  
 Links: [Are you an agent?](#are-you-an-agent) • [Is this a scam?](#is-this-a-scam)
 
