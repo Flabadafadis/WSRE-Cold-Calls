@@ -1,5 +1,5 @@
 Goals:
-- Identify Interested Sellers
+- Identify Motivated Sellers
 - Manage offer expectations
 - Set seller appointments
 
@@ -169,6 +169,7 @@ Use only if asked about price before the appointment, or at the end once the app
 * Confirmed → End
 * Not confirmed → [Schedule callback](#schedule-callback)
   [⬆ Back to Start](#start)
+
 
 
 
