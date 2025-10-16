@@ -3,7 +3,7 @@
 # Navigation
 
 - [Appointment Setter Script](#appointment-setter-script)
-- [Goals:](#goals)
+- [Goals](#goals)
 - [🧊 1. Introduction & Permission to Ask Questions](#1-introduction-permission-to-ask-questions)
 - [Hi may I speak to [prospect] please?](#hi-may-i-speak-to-prospect-please)
 - [Yes, can I ask who's calling?](#yes-can-i-ask-who-s-calling)
