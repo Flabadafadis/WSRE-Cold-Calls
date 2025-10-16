@@ -123,6 +123,9 @@ Links: [I want top dollar / retail.](#i-want-top-dollar--retail) • [Just send 
 ### Remove me / DNC.
 “Got it. I’ll remove your number.”  
 
+### Transparency - How we determine price typically.
+"Just so you are aware we are typically offering 60% of the value of the house. We also typically close 30-45 days."
+
 ---
 
 ## Data to Capture
