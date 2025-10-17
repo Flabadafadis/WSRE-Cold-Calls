@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seller Call Workbook v6.15</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <h1>Seller Call Workbook</h1>
+      <p>Do the call. Select the owner’s answers. Add notes. Export a minimal, labeled summary.</p>
+    </div>
+    <nav class="toc">
+      <a href="#intro">1. Intro</a>
+      <a href="#warm">2. Warm</a>
+      <a href="#timeline">3. Timeline</a>
+      <a href="#property">4. Property</a>
+      <a href="#finance">5. Financial</a>
+      <a href="#emotional">6. Emotional</a>
+      <a href="#decision">7. Decision</a>
+      <a href="#qualify">8. Qualify</a>
+      <a href="#close">9. Close</a>
+    </nav>
+    <div class="side-actions">
+      <button id="export-md" class="primary">Export Summary (.md)</button>
+      <button id="copy-md">Copy to Clipboard</button>
+      <button id="save">Save</button>
+      <button id="clear">Clear</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <!-- 1. INTRO -->
+    <section id="intro" class="card">
+      <h2>🧊 1. Introduction & Permission to Ask Questions</h2>
+
+      <div class="grid grid-4">
+        <label>Prospect name <input data-key="prospect_name" placeholder="[prospect]" /></label>
+        <label>Your name <input data-key="your_name" placeholder="[your name]" /></label>
+        <label>Street name <input data-key="street_name" placeholder="[street name]" /></label>
+      </div>
+
+      <div class="q">
+        <div class="prompt" data-tpl="Hi may I speak to [prospect] please?"></div>
+        <div class="chips" data-key="q1_speak">
+          <button data-val="Yes, speaking">Yes, speaking</button>
+          <button data-val="Not available">Not available</button>
+          <button data-val="Wrong number">Wrong number</button>
+          <button data-val="Do not call">Do not call</button>
+          <button data-val="Who is this?">Who is this?</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="q1_notes" placeholder="Additional info for this line"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt" data-tpl="Sure this is [name], I'm with a local real estate company and I was calling about your property over on [street name], are you still the owner by any chance?"></div>
+        <div class="chips" data-key="q3_owner">
+          <button data-val="Yes, owner">Yes, owner</button>
+          <button data-val="No, sold">No, sold</button>
+          <button data-val="Relative answering">Relative answering</button>
+          <button data-val="Tenant answering">Tenant answering</button>
+          <button data-val="Refused to answer">Refused to answer</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="q3_notes" placeholder="Additional info for this line"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">(If YES, proceed. If NO:)</div>
+        <div class="prompt" data-tpl="“No worries — like I said we are looking for our next deal, are you selling any other real estate in swfl?"></div>
+        <div class="chips" data-key="q4_other_props">
+          <button data-val="Has other property to sell">Has other property to sell</button>
+          <button data-val="No other property">No other property</button>
+          <button data-val="Call back later">Call back later</button>
+          <button data-val="Requested email">Requested email</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="q4_notes" placeholder="Additional info for this line"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. WARM -->
+    <section id="warm" class="card">
+      <h2>⏳ 2. Warm Motivation Opener</h2>
+
+      <div class="q">
+        <div class="prompt">“Great! Like I said, I work with a local real estate company and we’re looking for our next purchase, do you have a second for a few more questions?”</div>
+        <div class="chips" data-key="q5_time">
+          <button data-val="Yes, has time">Yes, has time</button>
+          <button data-val="Call later">Call later</button>
+          <button data-val="Send info first">Send info first</button>
+          <button data-val="Not interested">Not interested</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="q5_notes" placeholder="Additional info for this line"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">“Perfect! First off, what had you thinking about selling the property in the first place?</div>
+        <div class="chips" data-key="q7_reason">
+          <button data-val="Move">Move</button>
+          <button data-val="Inheritance">Inheritance</button>
+          <button data-val="Financial pressure">Financial pressure</button>
+          <button data-val="Tired landlord">Tired landlord</button>
+          <button data-val="Downsizing">Downsizing</button>
+          <button data-val="Other">Other</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="motivation_primary" placeholder="Their reason in their words"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">(Let them talk. If they give a vague answer, gently ask:)</div>
+        <div class="prompt">“Is this because you're moving, it's a rental, or you just want to sell and be done?”</div>
+        <div class="chips" data-key="motivation_clarifier">
+          <button data-val="Moving">Moving</button>
+          <button data-val="Rental/investment">Rental/investment</button>
+          <button data-val="Just want to sell">Just want to sell</button>
+          <button data-val="Other">Other</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="motivation_other" placeholder="If other, specify"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">Are you already working with a Realtor?</div>
+        <div class="chips" data-key="realtor_already">
+          <button data-val="Yes">Yes</button>
+          <button data-val="No">No</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="realtor_notes" placeholder="Agent name, brokerage, terms"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TIMELINE -->
+    <section id="timeline" class="card">
+      <h2>📅 3. Timeline & Readiness Check</h2>
+
+      <div class="q">
+        <div class="prompt">“Are you hoping to get the property sold pretty soon, or just feeling things out right now?”</div>
+        <div class="chips" data-key="timeline_state">
+          <button data-val="Pretty soon">Pretty soon</button>
+          <button data-val="Feeling things out">Feeling things out</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="timeline_notes" placeholder="Any extra context"></textarea>
+        </div>
+      </div>
+
+      <div class="q" data-show-if="timeline_state=Pretty soon">
+        <div class="prompt">“If you could sell it on your terms, how soon would you like that to happen?”</div>
+        <div class="chips" data-key="timeline_speed">
+          <button data-val="ASAP">ASAP</button>
+          <button data-val="~30 days">~30 days</button>
+          <button data-val="60–90 days">60–90 days</button>
+          <button data-val="Date specific">Date specific</button>
+        </div>
+        <input data-key="timeline_ideal" placeholder="If date specific, type it" />
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="timeline_ideal_notes" placeholder="Notes on desired timing"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROPERTY -->
+    <section id="property" class="card">
+      <h2>🏠 4. Property Condition & Use</h2>
+
+      <div class="q">
+        <div class="prompt">“Are you currently living in the property, or is it vacant or rented out?”</div>
+        <div class="chips" data-key="occupancy">
+          <button data-val="Owner-occupied">Owner-occupied</button>
+          <button data-val="Vacant">Vacant</button>
+          <button data-val="Rented">Rented</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="occupancy_notes" placeholder="Names, lease status, access notes"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">“How’s the condition of the house—does it need any repairs or updates at this point?”</div>
+        <div class="chips" data-key="condition_level">
+          <button data-val="Excellent">Excellent</button>
+          <button data-val="Average">Average</button>
+          <button data-val="Needs work">Needs work</button>
+          <button data-val="Major repairs">Major repairs</button>
+          <button data-val="Unknown">Unknown</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="condition_repairs" placeholder="Specific repairs or updates"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">(Optional add-on:)</div>
+        <div class="prompt">“Would you say it’s move-in ready, or more of a handyman special?”</div>
+        <div class="chips" data-key="condition_grade">
+          <button data-val="Move-in ready">Move-in ready</button>
+          <button data-val="Handyman special">Handyman special</button>
+          <button data-val="Unsure">Unsure</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="condition_grade_notes" placeholder="Any detail"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FINANCIAL -->
+    <section id="finance" class="card">
+      <h2>💸 5. Financial or Logistical Pain Points (Soft Entry)</h2>
+
+      <div class="q">
+        <div class="prompt">“Any issues with the mortgage, taxes, or code stuff lately—or is everything pretty current?”</div>
+        <div class="chips" data-key="financial_issues">
+          <button data-val="Mortgage behind">Mortgage behind</button>
+          <button data-val="Taxes behind">Taxes behind</button>
+          <button data-val="Code violations">Code violations</button>
+          <button data-val="Liens">Liens</button>
+          <button data-val="Everything current">Everything current</button>
+          <button data-val="Unknown">Unknown</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="financial_notes" placeholder="Amounts, timelines, references"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">“Just curious—have you had the property listed in the past year, or talked to any agents yet?”</div>
+        <div class="chips" data-key="past_listed">
+          <button data-val="Listed in past year">Listed in past year</button>
+          <button data-val="Talked to agents">Talked to agents</button>
+          <button data-val="FSBO">FSBO</button>
+          <button data-val="No">No</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="past_listed_notes" placeholder="MLS #, dates, price, agent names"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. EMOTIONAL -->
+    <section id="emotional" class="card">
+      <h2>🧠 6. Emotional Insight / What They Want</h2>
+      <div class="q">
+        <div class="prompt">“If everything lined up just right, what would selling this place allow you to do?”</div>
+        <div class="chips" data-key="emotional_theme">
+          <button data-val="Debt payoff">Debt payoff</button>
+          <button data-val="Relocation">Relocation</button>
+          <button data-val="Buy another home">Buy another home</button>
+          <button data-val="Cash out">Cash out</button>
+          <button data-val="Simplify">Simplify</button>
+          <button data-val="Other">Other</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="emotional_why" placeholder="Their 'why' verbatim or summary"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DECISION -->
+    <section id="decision" class="card">
+      <h2>👥 7. Decision-Makers Check</h2>
+
+      <div class="q">
+        <div class="prompt">“Are you the only one making the decision on this, or is someone else involved too?”</div>
+        <div class="chips" data-key="decision_structure">
+          <button data-val="Solo">Solo</button>
+          <button data-val="Spouse/partner">Spouse/partner</button>
+          <button data-val="Family">Family</button>
+          <button data-val="Business partner">Business partner</button>
+          <button data-val="Other">Other</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="decision_makers" placeholder="Names and roles"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">“Will they also be available to chat when we go over the options?”</div>
+        <div class="chips" data-key="decision_availability">
+          <button data-val="Yes">Yes</button>
+          <button data-val="No">No</button>
+          <button data-val="Unsure">Unsure</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="decision_notes" placeholder="Availability constraints"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. QUALIFY -->
+    <section id="qualify" class="card">
+      <h2>✅ 8. Qualify/Manage Expectations & Set Appointment</h2>
+
+      <div class="q">
+        <div class="prompt">“Before we meet, our ideal property is something we purchase, fix up, and then resale, and our offers typically come in at about 60% of the updated “fixed up” value of the property. Before we go any further is that a deal breaker for you?</div>
+        <div class="chips" data-key="sixty_accept">
+          <button data-val="Not a deal breaker">Not a deal breaker</button>
+          <button data-val="Deal breaker">Deal breaker</button>
+          <button data-val="Wants more info">Wants more info</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="sixty_notes" placeholder="Reactions or follow-ups"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">Great, okay, sounds like this might be something we can definitely help with. The next step would be a quick appointment with our home advisor — he can break down what we’d be able to offer and walk you through your options. Does 3 or 4 pm tomorrow work better for you?”</div>
+        <div class="chips" data-key="schedule_now">
+          <button data-val="Yes">Yes</button>
+          <button data-val="No">No</button>
+          <button data-val="Offer alternate">Offer alternate</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="qualify_notes" placeholder="Urgency, distress, flexibility"></textarea>
+        </div>
+      </div>
+
+      <div class="grid grid-4" id="appt-grid">
+        <input type="hidden" data-key="day_time" />
+        <div class="appt-row" data-index="1">
+          <div class="datecell">
+            <div class="datehead">
+              <label>Date</label>
+              <button type="button" class="remove-time" data-index="1" title="Delete this time">×</button>
+            </div>
+            <input type="date" data-key="day_date_1" />
+          </div>
+          <div class="timecell">
+            <label>Time</label>
+            <input type="time" data-key="day_time_1" />
+          </div>
+        </div>
+        <div id="extra-times"></div>
+        <button type="button" id="add-time" class="notes-trigger">＋ Add another time</button>
+      </div>
+    </section>
+
+    <!-- 9. CLOSE -->
+    <section id="close" class="card">
+      <h2>📌 9. Close the Call</h2>
+
+      <div class="q">
+        <div class="prompt" data-tpl="“Perfect, I’ve got you down for [day/time]. We’ll shoot you a quick text to confirm — you don’t need to prepare anything, just be ready to chat for a few minutes, but we will try to get an offer signed while we’re there."></div>
+        <div class="chips" data-key="close_confirm">
+          <button data-val="Confirmed">Confirmed</button>
+          <button data-val="Tentative">Tentative</button>
+          <button data-val="Needs follow-up">Needs follow-up</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="close_notes" placeholder="Any closing remarks or commitments"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">(If there is another decision maker in 7, make sure they will be present for the appointment!)</div>
+        <div class="chips" data-key="dm_present">
+          <button data-val="Will be present">Will be present</button>
+          <button data-val="Won't be present">Won't be present</button>
+          <button data-val="Unknown">Unknown</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="dm_present_notes" placeholder="Who else should attend"></textarea>
+        </div>
+      </div>
+
+      <div class="q">
+        <div class="prompt">Thank you so much for taking our call and we’re looking forward to helping you figure this out!</div>
+        <div class="chips" data-key="thanks_ack">
+          <button data-val="Acknowledged">Acknowledged</button>
+          <button data-val="No response">No response</button>
+        </div>
+        <button type="button" class="notes-trigger">＋ Add details</button>
+        <div class="notes collapsed">
+          <textarea data-key="thanks_notes" placeholder="Final notes"></textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden">Copied to clipboard</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
