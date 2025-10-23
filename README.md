@@ -9,7 +9,7 @@ This workbook helps you collect answers during a phone call and make a short sum
 
 ## How to download the ZIP
 1. Click the green button labeled "<> Code" and then click the "Download Zip" button.
-2. A file named `seller_call_workbook_v615.zip` will download.
+2. A file named `WSRE-Cold-Calls-main.zip` will download.
 3. If your browser shows a message like **Keep** or **Allow**, click it so the file saves.
 4. Open your **Downloads** folder. You should see the ZIP file there.
 
