@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Module Test Suite</title>
+  <style>
+    body {
+      font-family: monospace;
+      padding: 20px;
+      background: #1e293b;
+      color: #e2e8f0;
+    }
+    .test {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      background: #334155;
+    }
+    .pass {
+      border-left: 4px solid #10b981;
+    }
+    .fail {
+      border-left: 4px solid #ef4444;
+    }
+    h1 {
+      color: #60a5fa;
+    }
+    h2 {
+      color: #fbbf24;
+      margin-top: 20px;
+    }
+    button {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 5px;
+      font-family: monospace;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+    #results {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Module Test Suite</h1>
+  <p>Testing modular architecture for Cold Calls Workbook</p>
+  
+  <h2>Quick Tests</h2>
+  <button onclick="testModulesLoaded()">1. Test Modules Loaded</button>
+  <button onclick="testCoreUtilities()">2. Test Core Utilities</button>
+  <button onclick="testAddSectionExists()">3. Test addSection() Exists</button>
+  <button onclick="testAddSectionDirect()">4. Test addSection() Direct Call</button>
+  <button onclick="runAllTests()">▶ Run All Tests</button>
+  
+  <div id="results"></div>
+
+  <script src="modules/core.js?v=test"></script>
+  <script src="modules/storage.js?v=test"></script>
+  <script src="modules/sections.js?v=test"></script>
+  <script src="modules/developer-ui.js?v=test"></script>
+  <script src="modules/main.js?v=test"></script>
+
+  <script>
+    const results = document.getElementById('results');
+    
+    function addResult(test, passed, message) {
+      const div = document.createElement('div');
+      div.className = 'test ' + (passed ? 'pass' : 'fail');
+      div.innerHTML = `
+        <strong>${passed ? '✅' : '❌'} ${test}</strong><br>
+        <small>${message}</small>
+      `;
+      results.appendChild(div);
+      console.log(`${passed ? '✅' : '❌'} ${test}: ${message}`);
+    }
+    
+    function testModulesLoaded() {
+      results.innerHTML = '<h2>Test Results: Modules Loaded</h2>';
+      
+      const modules = [
+        'qs', 'qsa', 'esc', 'devLog', 'showToast',
+        'saveDeveloperData', 'loadDeveloperData',
+        'addSection', 'deleteSection', 'updateSidebarNavigation',
+        'setupDeveloperUI', 'removeDeveloperUI'
+      ];
+      
+      modules.forEach(fn => {
+        const exists = typeof window[fn] === 'function';
+        addResult(
+          `Function: ${fn}()`,
+          exists,
+          exists ? 'Function exists and is callable' : 'Function NOT found'
+        );
+      });
+      
+      // Check global variables
+      const vars = ['developerMode', 'devLogs', 'KEY', 'DEV_KEY'];
+      vars.forEach(v => {
+        const exists = typeof window[v] !== 'undefined';
+        addResult(
+          `Variable: ${v}`,
+          exists,
+          exists ? `Value: ${JSON.stringify(window[v])}` : 'Variable NOT found'
+        );
+      });
+    }
+    
+    function testCoreUtilities() {
+      results.innerHTML = '<h2>Test Results: Core Utilities</h2>';
+      
+      // Test qs
+      try {
+        const body = qs('body');
+        addResult('qs("body")', body !== null, 'Found body element');
+      } catch (e) {
+        addResult('qs("body")', false, 'Error: ' + e.message);
+      }
+      
+      // Test qsa
+      try {
+        const buttons = qsa('button');
+        addResult('qsa("button")', buttons.length > 0, `Found ${buttons.length} buttons`);
+      } catch (e) {
+        addResult('qsa("button")', false, 'Error: ' + e.message);
+      }
+      
+      // Test esc
+      try {
+        const escaped = esc('<script>alert("xss")</script>');
+        const safe = !escaped.includes('<script>');
+        addResult('esc()', safe, safe ? 'HTML escaped correctly' : 'Escaping FAILED');
+      } catch (e) {
+        addResult('esc()', false, 'Error: ' + e.message);
+      }
+      
+      // Test devLog
+      try {
+        const before = devLogs.length;
+        devLog('Test message');
+        const after = devLogs.length;
+        addResult('devLog()', after > before, `Log entries: ${before} → ${after}`);
+      } catch (e) {
+        addResult('devLog()', false, 'Error: ' + e.message);
+      }
+    }
+    
+    function testAddSectionExists() {
+      results.innerHTML = '<h2>Test Results: addSection() Function</h2>';
+      
+      const exists = typeof addSection === 'function';
+      addResult('addSection exists', exists, exists ? 'Function is defined' : 'Function NOT found');
+      
+      if (exists) {
+        const src = addSection.toString();
+        addResult('Has try/catch', src.includes('try'), 'Error handling present');
+        addResult('Has logging', src.includes('devLog'), 'Debug logging present');
+        addResult('Has alerts', src.includes('alert'), 'User alerts present');
+        addResult('Has afterSectionId param', src.includes('afterSectionId'), 'Parameter defined');
+      }
+    }
+    
+    function testAddSectionDirect() {
+      results.innerHTML = '<h2>Test Results: Direct addSection() Call</h2>';
+      
+      // Create a test section
+      const testSection = document.createElement('div');
+      testSection.className = 'section';
+      testSection.id = 'test-section-1';
+      testSection.innerHTML = '<div class="question-panel"><div class="question-text">Test</div></div>';
+      document.body.appendChild(testSection);
+      
+      addResult('Test section created', true, 'Section #test-section-1 added to DOM');
+      
+      try {
+        const before = document.querySelectorAll('.section').length;
+        addResult('Sections before', true, `Count: ${before}`);
+        
+        // THIS IS THE CRITICAL TEST
+        addResult('Calling addSection()', true, 'Executing addSection("test-section-1")...');
+        addSection('test-section-1');
+        
+        const after = document.querySelectorAll('.section').length;
+        addResult('Sections after', after > before, `Count: ${before} → ${after}`);
+        
+        const success = after > before;
+        addResult(
+          '🎯 ADD SECTION WORKS!',
+          success,
+          success 
+            ? '✅ Function executed successfully!' 
+            : '❌ Function did not create new section'
+        );
+        
+      } catch (e) {
+        addResult('addSection() execution', false, 'ERROR: ' + e.message);
+        console.error('Test error:', e);
+      }
+    }
+    
+    function runAllTests() {
+      results.innerHTML = '<h2>Running All Tests...</h2>';
+      
+      setTimeout(() => {
+        testModulesLoaded();
+        setTimeout(() => {
+          testCoreUtilities();
+          setTimeout(() => {
+            testAddSectionExists();
+            setTimeout(() => {
+              testAddSectionDirect();
+            }, 500);
+          }, 500);
+        }, 500);
+      }, 500);
+    }
+    
+    // Auto-run on load
+    console.log('🧪 Test suite loaded. Click buttons to run tests.');
+  </script>
+</body>
+</html>

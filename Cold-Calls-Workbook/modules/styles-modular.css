@@ -1,0 +1,142 @@
+/* Modular version styles */
+
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.question-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.question-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+  padding: 12px;
+  border-left: 4px solid #667eea;
+  background: #f8fafc;
+  border-radius: 6px;
+  min-height: 40px;
+}
+
+.question-text:focus {
+  outline: 2px solid #667eea;
+  background: white;
+}
+
+.response-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  background: #e2e8f0;
+  color: #475569;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.chip:hover {
+  background: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.chip.active {
+  background: #667eea;
+  color: white;
+  font-weight: 600;
+}
+
+#question-nav {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+#question-nav h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-item {
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  background: #e2e8f0;
+  color: #667eea;
+}
+
+kbd {
+  background: #334155;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: monospace;
+}
+
+/* Developer mode specific styles */
+.prompt-controls {
+  background: #e0e0e0;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 5px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.green-section-btn-container {
+  text-align: center;
+  margin: 15px 0;
+  padding: 10px;
+  background: #e8f5e9;
+  border-radius: 8px;
+}
+
+.green-add-section-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.green-add-section-btn:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

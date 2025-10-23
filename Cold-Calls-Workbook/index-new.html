@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WSRE Cold Call Script v7.0</title>
+  <link rel="stylesheet" href="styles.css?v=2025102314" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <h1>WSRE Cold Call Script</h1>
+      <p>Professional, friendly & casual script for Southwest Florida. Select responses, add notes, export summary.</p>
+    </div>
+    <nav class="toc" id="nav-toc">
+      <a href="#intro">1. Opening</a>
+      <a href="#motivation">2. Motivation</a>
+      <a href="#timeline">3. Timeline</a>
+      <a href="#property">4. Property</a>
+      <a href="#financial">5. Financial</a>
+      <a href="#goals">6. Goals</a>
+      <a href="#decision">7. Decision</a>
+      <a href="#appointment">8. Appointment</a>
+      <a href="#close">9. Close</a>
+    </nav>
+    <div class="side-actions">
+      <button id="export-md" class="primary">Export Summary (.md)</button>
+      <button id="copy-md">Copy to Clipboard</button>
+      <button id="save">Save</button>
+      <button id="clear">Clear</button>
+      <button id="developer">Developer</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <!-- SECTIONS WILL BE LOADED HERE -->
+  </main>
+
+  <aside class="right-panel">
+    <h3>Quick Reference</h3>
+    <div id="notes-summary">
+      <p style="color: #64748b; font-size: 13px;">Your responses and notes will appear here as you go through the call.</p>
+    </div>
+  </aside>
+
+  <!-- Load modules in order -->
+  <script src="modules/core.js?v=2025102314"></script>
+  <script src="modules/script-content.js?v=2025102314"></script>
+  <script src="modules/storage.js?v=2025102314"></script>
+  <script src="modules/export.js?v=2025102314"></script>
+  <script src="modules/ui-interactions.js?v=2025102314"></script>
+  <script src="modules/developer-mode.js?v=2025102314"></script>
+  <script src="modules/main.js?v=2025102314"></script>
+</body>
+</html>
